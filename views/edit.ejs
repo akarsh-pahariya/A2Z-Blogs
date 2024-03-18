@@ -1,0 +1,12 @@
+<%- include('partials/header.ejs') %>
+    <h1>Edit your blog here !!</h1>
+    <form action="/edit/<%= i %>" method="POST">
+        <div class="input-group">
+            <input type="text" name="title" value="<%= blog.title %>" required>
+        </div>
+        <div class="input-group">
+            <input type="text" name="content" value="<%= blog.content %>" style="height: 100px" required> 
+        </div>
+        <input type="submit" value="Edit Blog !!" class="btn btn-primary">
+    </form>
+    <%- include('partials/footer.ejs') %>

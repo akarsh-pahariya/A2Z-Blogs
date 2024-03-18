@@ -1,0 +1,12 @@
+<%- include('partials/header.ejs') %>
+    <h1>Add your blog here !!</h1>
+    <form action="/add" method="POST">
+        <div class="input-group">
+            <input type="text" placeholder="Enter topic of your blog here" name="title" required>
+        </div>
+        <div class="input-group">
+            <input type="text" class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5" placeholder="Enter content of your blog here" name="content" style="height: 100px" required>    
+        </div>
+        <input type="submit" value="Add Blog !!" class="btn btn-primary">
+    </form>
+    <%- include('partials/footer.ejs') %>
